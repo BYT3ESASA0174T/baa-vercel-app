@@ -1,0 +1,23 @@
+.wip-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+  }
+  .wip-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #86D3FF;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: #60686C;
+    
+  }

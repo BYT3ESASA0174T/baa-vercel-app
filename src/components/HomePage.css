@@ -1,0 +1,27 @@
+/*Homesite Content*/
+
+.hp-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    color: white;
+  }
+  .hp-maintext{
+    font-size: clamp(1rem, 10vw, 10rem);
+    margin: 0 20%;
+    margin-bottom: 1rem;
+  
+  }
+  .hp-content p {
+    text-align: center;
+    margin: 0 20%;
+    opacity: 0.5;
+  }
