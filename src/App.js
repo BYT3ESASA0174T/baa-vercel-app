@@ -26,7 +26,7 @@ const App = () => {
     () => ({
       background: {
         color: {
-          value: "#ffffff",
+          value: "#000000",
         },
       },
       fpsLimit: 120,
@@ -102,7 +102,6 @@ const App = () => {
           options={options}
         />
         <div className="wip-content">
-          
           <p className="wip-text"> <img src={test} alt="Loading..." width="200vw" height="200vh"/>Work in progress ...</p>
         </div>
       </>
