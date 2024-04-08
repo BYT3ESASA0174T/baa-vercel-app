@@ -10,14 +10,7 @@
   bottom: 0;
   z-index: 100;
 }
-.wip-text{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  color: #86D3FF;
-  border-radius: 25px;
-  padding: 10px 20px;
-  background-color: #60686C;
+.wip-maintext{
+  font-size: 10rem;
   
 }

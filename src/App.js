@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import test from "./work-in-progress.gif";
 import './App.css';
 import { loadSlim } from "@tsparticles/slim"; 
 
@@ -102,14 +101,11 @@ const App = () => {
           options={options}
         />
         <div className="wip-content">
-          <p className="wip-text"> <img src={test} alt="Loading..." width="200vw" height="200vh"/>Work in progress ...</p>
+          <h2 className="wip-maintext">BytesAsArt</h2>
         </div>
       </>
     );
 
-    // return(
-    //   <>Loading...</>
-    // );
 
 
   }
