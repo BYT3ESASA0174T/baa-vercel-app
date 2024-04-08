@@ -1,5 +1,8 @@
+/*Homesite Content*/
+
 .wip-content{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -8,9 +11,16 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 100;
+  z-index: 1;
 }
 .wip-maintext{
-  font-size: 10rem;
-  
+  font-size: clamp(1rem, 10vw, 10rem);
+  margin: 0 20%;
+  margin-bottom: 1rem;
+
+}
+.wip-content p {
+  text-align: center;
+  margin: 0 20%;
+  opacity: 0.5;
 }
