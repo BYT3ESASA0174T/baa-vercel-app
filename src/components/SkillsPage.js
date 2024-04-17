@@ -178,7 +178,7 @@ const SkillsPage = () => {
                   <div className="description">{currentItem.description}</div>
                   <div className="buttons">
                     <button onClick={()=> window.open('https://github.com/BYT3ESASA0174T', '_blank')}>SEE MORE</button>
-                    <button onClick={()=> window.location.href='mailto:example@example.com'}>CONTACT ME</button>
+                    <button onClick={()=> window.location.href='mailto:bytesasart@proton.me'}>CONTACT ME</button>
                   </div>
                 </div>
               </div>
