@@ -105,7 +105,7 @@ const HomePage = () => {
         <NavBar />
         <div className="hp-content">
           <h2 className="hp-maintext">BytesAsArt</h2>
-          <p>I am a full-stack developer and penetration tester and build whatever meets my imagination to simulate attacks in the digital space, protect against them and implement my own experiments</p>
+          <p>I am a software/full-stack web developer and penetration tester and build whatever meets my imagination to simulate attacks in the digital space, protect against them and implement my own experiments</p>
         </div>
       </>
     );
