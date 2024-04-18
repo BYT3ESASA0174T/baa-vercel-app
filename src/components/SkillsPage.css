@@ -1,20 +1,21 @@
-.sp-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4.05rem;
-    height: 100vh - 4.05rem;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-    color: white;
-    background-color: white;
-  }
+.sp-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.05rem;
+  height: calc(100vh - 4.05rem);
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  color: white;
+  background-color: black;
+  overflow-y: auto;
+}
 
   /* Carousel */
 
@@ -325,7 +326,20 @@
     }
     
   }
+
+  @media screen and (max-height: 700px){
+    .sp-content{
+      height: 225vh;
+    }
+  }
+
   @media screen  and (max-width: 678px) {
+
+    @media screen and (max-height: 700px){
+      .sp-content{
+        height: 100vh;
+      }
+    }
 
     .carousel .list .item .content{
         top: 0%;
@@ -338,6 +352,8 @@
         bottom: 10px;
     }
   }
+
+
 
   /* Animations */
 
