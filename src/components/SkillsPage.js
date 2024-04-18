@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; 
 import NavBar from './NavBar';
@@ -14,6 +15,7 @@ const SkillsPage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showContent, setShowContent] = useState(false);
   const [hideContent, setHideContent] = useState(false);
+  const navigate = useNavigate();
 
   const items = [
     {
@@ -26,7 +28,7 @@ const SkillsPage = () => {
       image: CompNetImage,
       author: 'since 2012',
       title: 'Network Technology',
-      description: 'Network technology is an area that has occupied me for a long time. Every day I deal with topics in the areas of virtualization, routing, network protocols and services. I also use this knowledge to provide entire test networks for my activities in the field of cyber security.',
+      description: 'Network Technology is an area that has occupied me for a long time. Every day I deal with topics in the areas of virtualization, routing, network protocols and services. I also use this knowledge to provide entire test networks for my activities in the field of cyber security.',
     },
     {
         image: WebDevImage,
@@ -177,7 +179,7 @@ const SkillsPage = () => {
                   {/* <div className="topic">{currentItem.topic}</div> */}
                   <div className="description">{currentItem.description}</div>
                   <div className="buttons">
-                    <button onClick={()=> window.open('https://github.com/BYT3ESASA0174T', '_blank')}>SEE MORE</button>
+                    <button onClick={() => navigate('/about')}>SEE MORE</button>
                     <button onClick={()=> window.location.href='mailto:bytesasart@proton.me'}>CONTACT ME</button>
                   </div>
                 </div>
